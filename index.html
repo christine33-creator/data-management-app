@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to the Lake Forest College Sports Website</title>
+    <style>
+        body {
+            background-color: #f0f0f0; /* Light gray background */
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+
+        h1 {
+            color: #333; /* Dark gray text color */
+        }
+
+        h3 {
+            color: #555; /* Slightly lighter gray text color */
+        }
+
+        form {
+            background-color: #fff; /* White background for the form */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Light box shadow */
+            max-width: 400px;
+            margin: 0 auto; /* Center the form on the page */
+        }
+
+        input {
+            padding: 10px;
+            margin-bottom: 15px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50; /* Green submit button */
+            color: white;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049; /* Darker green on hover */
+        }
+
+        a {
+            color: #3498db; /* Blue link color */
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline; /* Underline on hover */
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Welcome to the Lake Forest College Sports Website</h1>
+    <h3>Please log into the system to continue</h3>
+    <form action="welcome.php" method="POST">
+        UserID: <input type="text" name="Userid">
+        <br><br>
+        Password: <input type="password" name="Password">
+        <br><br>
+        Don't have an account yet? Sign up <a href="signup.php">here</a>.
+        <br><br>
+        <input type="reset" value="clear">
+        <input type="submit" value="login">
+    </form>
+
+</body>
+
+</html>
